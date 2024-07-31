@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Epic",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#constant"
+    },
+    {
+      "include": "#variables"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.epic",
+          "match": "\\b(let)\\b"
+        },
+        {
+          "name": "keyword.operator.arithmetic.int.epic",
+          "match": "(\\+|\\-|/|\\*|%)"
+        },
+        {
+          "name": "keyword.operator.assignment.epic",
+          "match": "="
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.other.epic",
+          "match": "\\b[a-z_][a-zA-Z0-9_]*\\b"
+        },
+        {
+          "name": "variable.other.special.epic",
+          "match": "\\b(x|value)\\b"
+        }
+      ]
+    },
+    "constant": {
+      "patterns": [
+        {
+          "include": "#binary_number"
+        },
+        {
+          "include": "#octal_number"
+        },
+        {
+          "include": "#hexadecimal_number"
+        },
+        {
+          "include": "#decimal_number"
+        },
+        {
+          "include": "#boolean"
+        },
+        {
+          "name": "entity.name.type.epic",
+          "match": "[[:upper:]][[:word:]]*"
+        }
+      ]
+    },
+    "decimal_number": {
+      "name": "constant.numeric.decimal.epic",
+      "match": "\\b[[:digit:]]+(_?[[:digit:]])*(\\.[[:digit:]]*)?(e-?[[:digit:]]*)?\\b",
+      "patterns": []
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.epic",
+          "match": "//.*"
+        }
+      ]
+    },
+    "discards": {
+      "name": "comment.unused.epic",
+      "match": "\\b_(?:[[:word:]]+)?\\b"
+    }
+  },
+  "scopeName": "source.epic"
+}

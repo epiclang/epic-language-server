@@ -1,0 +1,41 @@
+{
+  "name": "epic-language",
+  "displayName": "Epic Language",
+  "description": "Extension for Epic Language",
+  "version": "0.0.1",
+  "publisher": "EpicLanguage",
+  "icon": "assets/epic-logo.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epiclang/epic-language-server"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "epic",
+        "aliases": [
+          "Epic",
+          "epic"
+        ],
+        "extensions": [
+          ".epic"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "epic",
+        "scopeName": "source.epic",
+        "path": "./syntaxes/epic.tmLanguage.json"
+      }
+    ]
+  }
+}
