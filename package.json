@@ -2,7 +2,7 @@
   "name": "epic-language",
   "displayName": "Epic Language",
   "description": "Extension for Epic Language",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "EpicLanguage",
   "icon": "assets/epic-logo.png",
   "license": "MIT",

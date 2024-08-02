@@ -4,4 +4,5 @@
 
 Provides syntax highlighting and use of the Epic Language Server, which itself provides formatting, goto-definition, autocompletion, and more!
 
-[Contribute to the extension on Github](https://github.com/your-username/epic-language-vscode)
+[Here you can find Epic Language website](https://epiclang.org)
+[Here you can find Epic Language GitHub](https://github.com/epiclang/epic)
